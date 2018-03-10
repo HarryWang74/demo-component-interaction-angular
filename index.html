@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    .grey{
+      background-color: rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid #ccc;
+    }
+    .leftBorder{
+      border-left: 1px solid #ccc;
+    }
+    .white{
+      border-bottom: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 1);
+    }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- heading  -->
+      <div class="row sticky-top white py-2">
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-8">
+          <h2>Demo customer selector steps</h2>
+        </div>
+      </div>
+      <div class="row white">
+        <div class="col-sm-4 py-4">
+          <h3>09 <br>customerDetail 选择客户</h3>
+        </div>
+        <div class="col-sm-8 py-4 leftBorder">
+          <ul>
+            <li>在 productDetail 里导入 output, EventEmitter  </li>
+            <li>在 productDetail 里定义 output shift </li>
+            <li>在 productDetail 里定义 left, right click</li>
+            <li>在 productDetail 里绑定 left, right click 到按钮</li>
+            <li>在 productList 里接收 productDetail 的 shift</li>
+            <li>在 productList 里根据接收的 index 选择 customer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
