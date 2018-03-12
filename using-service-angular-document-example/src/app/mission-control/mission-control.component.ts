@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { MissionService } from '../mission.service';
 
 @Component({
   selector: 'app-mission-control',
   templateUrl: './mission-control.component.html',
-  styleUrls: ['./mission-control.component.css'],
-  providers: [MissionService]
+  styleUrls: ['./mission-control.component.css']
 })
 export class MissionControlComponent implements OnInit {
   // 初始化设置，3个宇航员，3个任务，任务记录为空，下个任务index=0
@@ -16,17 +14,12 @@ export class MissionControlComponent implements OnInit {
               'Fly to Vegas!'];
   nextMission = 0;
 
-  constructor(private missionService: MissionService) {
-    missionService.missionConfirmed$.subscribe(
-      astronaut => {
-        this.history.push(`${astronaut} confirmed the mission`);
-      });
+  constructor() {
   }
 
   announce() {
     // 点击按钮，使用下个任务index 选择任务
     const mission = this.missions[this.nextMission++];
-    this.missionService.announceMission(mission);
     // 更新任务记录
     this.history.push(`Mission "${mission}" announced`);
     // 归零设置
