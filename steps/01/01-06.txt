@@ -1,0 +1,6 @@
+<p>
+  astronautName: <strong>mission</strong>
+  <button>
+    Confirm
+  </button>
+</p>
