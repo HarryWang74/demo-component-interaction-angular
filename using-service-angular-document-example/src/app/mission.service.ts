@@ -7,9 +7,11 @@ export class MissionService {
   private missionAnnouncedSource = new Subject<string>();
 
   // Observable string streams
+  // 接收
   missionAnnounced$ = this.missionAnnouncedSource.asObservable();
 
   // Service message commands
+  // 发送 
   announceMission(mission: string) {
     this.missionAnnouncedSource.next(mission);
   }
