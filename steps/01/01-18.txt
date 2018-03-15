@@ -18,14 +18,7 @@ export class AstronautComponent implements  OnDestroy{
     this.subscription = missionService.missionAnnounced$.subscribe(
       mission => {
         this.mission = mission;
-        this.announced = true;
-        this.confirmed = false;
     });
-  }
-
-  confirm() {
-    this.confirmed = true;
-    this.missionService.confirmMission(this.astronaut);
   }
 
   // 释放内存
@@ -33,5 +26,4 @@ export class AstronautComponent implements  OnDestroy{
     // prevent memory leak when component destroyed
     this.subscription.unsubscribe();
   }
-
 }

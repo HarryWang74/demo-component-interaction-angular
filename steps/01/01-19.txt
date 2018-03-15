@@ -33,5 +33,4 @@ export class AstronautComponent implements  OnDestroy{
     // prevent memory leak when component destroyed
     this.subscription.unsubscribe();
   }
-
 }
