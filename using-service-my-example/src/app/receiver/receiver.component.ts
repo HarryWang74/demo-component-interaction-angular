@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./receiver.component.css']
 })
 export class ReceiverComponent implements OnInit {
-
+  message: any = {
+    subject: "no",
+    content: "no"
+  }
   constructor() { }
 
   ngOnInit() {
