@@ -1,0 +1,19 @@
+component 间交互数据有2种方式（关系）
+    谓数据交互
+        * 一个 componant 传数据到另一个 componant
+        * 一个 componant 调用另一个 componant 的 method
+    componant 间的关系
+        * parent/child
+        * no parent/child
+
+    需要明白/实践的问题
+        一个 componant 传数据到另一个 componant
+            parent/child
+            no parent/child
+                使用 service
+                    angular example
+                    my example
+        
+        一个 componant 调用另一个 componant 的 method
+            parent/child
+            no parent/child
