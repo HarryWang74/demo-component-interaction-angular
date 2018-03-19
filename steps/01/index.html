@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+    .grey{
+      background-color: rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid #ccc;
+    }
+    .leftBorder{
+      border-left: 1px solid #ccc;
+    }
+    .white{
+      border-bottom: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 1);
+    }
+    </style>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- heading  -->
+      <div class="row sticky-top white py-2">
+        <div class="col-sm-12">
+          <h2>Angular douments example</h2>
+        </div>
+      </div>
+      
+
+      <div class="row grey">
+        <div class="col-sm-12 py-4 leftBorder">
+          <ul>
+            <li><a href="/steps/01/01-01.html" target="_blank">HTML mockup, 说明</a></li>
+            <li><a href="/steps/01/01-02.txt" target="_blank">创建 missionControl</a></li>
+            <li>加入 missionControl 到 appComponent</li>
+            <li><a href="/steps/01/01-03.txt" target="_blank">missionControl TS</a></li>
+            <li><a href="/steps/01/01-04.txt" target="_blank">missionControl HTML</a></li>
+            <li><a href="/steps/01/01-05.txt" target="_blank">创建 astronaut</a></li>
+            <li>加入 astronaut 到 missionControl</li>
+            <li><a href="/steps/01/01-06.txt" target="_blank">astronaut 加入 html</a></li>
+            <li>从 missionControl 绑定 astronautName 到 astronaut
+              <ul>
+                <li><a href="/steps/01/01-07.txt" target="_blank">在 missionControl 中根据astronaut 数量 loop astronaut component</a></li>
+                <li><a href="/steps/01/01-08.txt" target="_blank">astronaut 设置 input  </a></li>
+                <li><a href="/steps/01/01-09.txt" target="_blank">在 missionControl 里向astronaut 绑定 astronaut  </a></li>
+                <li><a href="/steps/01/01-10.txt" target="_blank">在 astronaut 中显示 astronautName  </a></li>
+              </ul>
+              <li><a href="/steps/01/01-11.txt" target="_blank">创建 missionService</a></li>
+              </li>
+              <li>使用 service Announce mission
+                <ul>
+                    <li><a href="/steps/01/01-12.txt" target="_blank">导入 subject</a></li>
+                    <li><a href="/steps/01/01-13.txt" target="_blank">定义 Observable string sources, Observable string streams, method</a></li>
+                    <li><a href="/steps/01/01-14.txt" target="_blank">在 missionControl 里通过 service 发送 mission</a></li>
+                    <li><a href="/steps/01/01-15.txt" target="_blank">在 astronaut 里通过 service 就收 mission</a></li>
+                    <li><a href="/steps/01/01-16.txt" target="_blank">在 astronaut 里显示 mission</a></li>
+                </ul>
+              </li>
+              <li>
+                使用 service Confirm mission
+                <ul>
+                  <li>
+                      <a href="/steps/01/01-17.txt" target="_blank">
+                      定义 Observable string sources, Observable string streams, method
+                      </a>
+                  </li>
+                  <li>
+                    <a href="/steps/01/01-18.txt" target="_blank">
+                    在 astronaut 里设置 default setting
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/steps/01/01-19.txt" target="_blank">
+                    在 astronaut 里发送 confirm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/steps/01/01-20.txt" target="_blank">
+                    在 missionControl 里接收 confirm, update history
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+                
+                
+                
+                
+                
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
